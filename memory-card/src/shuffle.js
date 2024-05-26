@@ -3,3 +3,5 @@ function shuffleArray(arr) {
       return Math.random() - 0.5;
     });
     }
+
+export default shuffleArray;
