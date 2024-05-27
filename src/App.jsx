@@ -5,12 +5,19 @@ import fetchDetails from './data';
 
 
 alert('Welcome to Memory Card! The objective of the game is simple: select cards that you have not chosen before and keep going. Good luck!');
+function Footer(){
+  return(
+    <div className='bg-slate-950 text-white flex justify-center p-10'><p>Powered by The Movie Database</p> </div>
+  )
+}
+
+
 function Header({scores}){
   return(
     
 
 
-    <header className='w-screen bg-slate-950 text-white text-center flex flex-col items-center gap-5 p-10 sm:flex-row justify-between fixed' >
+    <header className='w-screen bg-slate-950 text-white text-center flex flex-col items-center gap-5 p-10 sm:flex-row justify-between fixed z-50' >
       <h1 className='font-bold'>MEMORY CARD GAME</h1>
       <div className='flex flex-col gap-6 sm:flex-row'>
         <div className='bg-slate-50 text-slate-950 px-7 py-1 rounded-lg'>
@@ -145,6 +152,7 @@ function App() {
         <Header scores={scores}/>
         <div className='h-52 sm:h-32'></div>
         <ImageContainer cards={cards} click={test} />
+        <Footer/>
       </>
     )
 
