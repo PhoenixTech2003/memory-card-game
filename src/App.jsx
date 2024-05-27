@@ -58,7 +58,7 @@ function ImageContainer({cards, click}){
 
   
     return(
-      <div className='grid grid-cols-3 gap-4 justify-center content-center p-3 sm:grid-cols-5 '>
+      <div className='grid grid-cols-2 gap-4 justify-center content-center p-3 sm:grid-cols-5 '>
       
       {listItems}
       
