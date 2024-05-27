@@ -39,7 +39,7 @@ function ImageContainer({cards, click}){
       
 
         return (
-          <button className='flex flex-col items-center justify-center border-solid border-slate-950 border-4 p-2 rounded-xl hover:animate-pulse ' key={card.id}  onClick={click}>
+          <button className='flex flex-col items-center justify-center border-solid border-slate-950 border-4 p-2 rounded-xl sm:hover:animate-pulse ' key={card.id}  onClick={click}>
 
             <img  src={card.img_src} id={card.id} alt="" />
             <p className='font-bold'>{card.title}</p>
